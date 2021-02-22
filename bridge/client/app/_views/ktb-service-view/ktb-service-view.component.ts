@@ -80,7 +80,6 @@ export class KtbServiceViewComponent implements OnInit {
           )
           .pipe(takeUntil(this.unsubscribe$))
           .subscribe(project => {
-            this.dataService.loadServices(project);
             this.dataService.loadRoots(project);
           });
 
